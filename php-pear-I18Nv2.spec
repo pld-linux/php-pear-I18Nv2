@@ -1,17 +1,17 @@
 %include	/usr/lib/rpm/macros.php
 %define		_class		I18Nv2
-%define		_status		alpha
+%define		_status		beta
 %define		_pearname	%{_class}
 
 Summary:	%{_pearname} - internationalization
 Summary(pl):	%{_pearname} - umiêdzynarodowienie
 Name:		php-pear-%{_pearname}
-Version:	0.10.0
+Version:	0.11.0
 Release:	1
 License:	PHP
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	b3e2c7b19206badc461a9b17c535915f
+# Source0-md5:	1f3269c5992f78cb86d2bca091051a05
 URL:		http://pear.php.net/package/I18Nv2/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
