@@ -6,12 +6,12 @@
 Summary:	%{_pearname} - internationalization
 Summary(pl):	%{_pearname} - umiêdzynarodowienie
 Name:		php-pear-%{_pearname}
-Version:	0.6.0
+Version:	0.7.0
 Release:	1
 License:	PHP
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	085e0871444c312a04e059f095fa8bff
+# Source0-md5:	a53008c4eb3669acab29a2333ddb5ec8
 URL:		http://pear.php.net/package/I18Nv2/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
@@ -38,7 +38,7 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/{Country,DecoratedList,Language,Locale}
 
 install %{_pearname}-%{version}/I18Nv2.php $RPM_BUILD_ROOT%{php_pear_dir}
-install %{_pearname}-%{version}/{Country,DecoratedList,Language,Locale,Negotiator}.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}
+install %{_pearname}-%{version}/{CommonList,Country,DecoratedList,Language,Locale,Negotiator}.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}
 install %{_pearname}-%{version}/Country/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/Country
 install %{_pearname}-%{version}/DecoratedList/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/DecoratedList
 install %{_pearname}-%{version}/Language/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/Language
