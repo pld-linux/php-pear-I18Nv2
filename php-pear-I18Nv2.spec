@@ -22,7 +22,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 This package provides basic support to localize your application, like
 locale based formatting of dates, numbers and currency.
 
-This class has in PEAR status: %{_status}.
+In PEAR status of this package is: %{_status}.
 
 %description -l pl
 Ta klasa dostarcza podstawowego wsparcia do lokalizacji apliakacji,
