@@ -6,12 +6,12 @@
 Summary:	%{_pearname} - internationalization
 Summary(pl):	%{_pearname} - umiêdzynarodowienie
 Name:		php-pear-%{_pearname}
-Version:	0.3.0
+Version:	0.4.0
 Release:	1
 License:	PHP
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	69a9aad3003f86e8e924b563fb6f9496
+# Source0-md5:	0e67e456cf6ee7f586f28a310de1bf97
 URL:		http://pear.php.net/package/I18Nv2/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
