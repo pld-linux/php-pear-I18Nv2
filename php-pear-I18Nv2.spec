@@ -25,7 +25,7 @@ locale based formatting of dates, numbers and currency.
 In PEAR status of this package is: %{_status}.
 
 %description -l pl
-Ta klasa dostarcza podstawowego wsparcia do lokalizacji apliakacji,
+Ta klasa dostarcza podstawowego wsparcia do lokalizacji aplikacji,
 takich jak formatowanie dat, liczb czy walut na podstawie locale.
 
 Ta klasa ma w PEAR status: %{_status}.
