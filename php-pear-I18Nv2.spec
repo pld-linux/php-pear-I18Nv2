@@ -35,10 +35,11 @@ Ta klasa ma w PEAR status: %{_status}.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/{Language,Locale}
+install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/{Country,Language,Locale}
 
 install %{_pearname}-%{version}/I18Nv2.php $RPM_BUILD_ROOT%{php_pear_dir}
 install %{_pearname}-%{version}/{Country,Language,Locale,Negotiator}.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}
+install %{_pearname}-%{version}/Country/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/Country
 install %{_pearname}-%{version}/Language/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/Language
 install %{_pearname}-%{version}/Locale/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/Locale
 
