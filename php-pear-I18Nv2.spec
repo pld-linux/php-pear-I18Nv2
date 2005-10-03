@@ -7,15 +7,18 @@ Summary:	%{_pearname} - internationalization
 Summary(pl):	%{_pearname} - umiêdzynarodowienie
 Name:		php-pear-%{_pearname}
 Version:	0.11.3
-Release:	2
+Release:	2.1
 License:	PHP
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	fb081bc35cc1758dbd40329927194cd4
 URL:		http://pear.php.net/package/I18Nv2/
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
-Requires:	php-pear
+Requires:	php-common >= 3:4.0.6
 Requires:	php-iconv
+Requires:	php-pcre
+Requires:	php-pear
+Requires:	php-pear-PEAR
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
