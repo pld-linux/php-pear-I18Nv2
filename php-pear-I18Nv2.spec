@@ -7,7 +7,7 @@ Summary:	%{_pearname} - internationalization
 Summary(pl):	%{_pearname} - umiêdzynarodowienie
 Name:		php-pear-%{_pearname}
 Version:	0.11.3
-Release:	3
+Release:	4
 Epoch:		0
 License:	PHP
 Group:		Development/Languages/PHP
