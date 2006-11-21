@@ -2,12 +2,11 @@
 %define		_class		I18Nv2
 %define		_status		beta
 %define		_pearname	%{_class}
-
 Summary:	%{_pearname} - internationalization
 Summary(pl):	%{_pearname} - umiêdzynarodowienie
 Name:		php-pear-%{_pearname}
 Version:	0.11.4
-Release:	1
+Release:	2
 Epoch:		0
 License:	PHP
 Group:		Development/Languages/PHP
@@ -17,9 +16,9 @@ URL:		http://pear.php.net/package/I18Nv2/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
+Requires:	php(iconv)
+Requires:	php(pcre)
 Requires:	php-common >= 3:4.0.6
-Requires:	php-iconv
-Requires:	php-pcre
 Requires:	php-pear
 Requires:	php-pear-PEAR-core
 BuildArch:	noarch
