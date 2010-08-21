@@ -6,8 +6,7 @@ Summary:	%{_pearname} - internationalization
 Summary(pl.UTF-8):	%{_pearname} - umiędzynarodowienie
 Name:		php-pear-%{_pearname}
 Version:	0.11.4
-Release:	3
-Epoch:		0
+Release:	4
 License:	PHP
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -16,9 +15,9 @@ URL:		http://pear.php.net/package/I18Nv2/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
-Requires:	php(iconv)
-Requires:	php(pcre)
 Requires:	php-common >= 3:4.0.6
+Requires:	php-iconv
+Requires:	php-pcre
 Requires:	php-pear
 Requires:	php-pear-PEAR-core
 BuildArch:	noarch
@@ -40,9 +39,9 @@ Ta klasa ma w PEAR status: %{_status}.
 Summary:	Tests for PEAR::%{_pearname}
 Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
-Requires:	%{name} = %{epoch}:%{version}-%{release}
-AutoReq:	no
+Requires:	%{name} = %{version}-%{release}
 AutoProv:	no
+AutoReq:	no
 
 %description tests
 Tests for PEAR::%{_pearname}.
