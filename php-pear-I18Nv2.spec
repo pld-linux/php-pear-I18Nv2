@@ -1,12 +1,12 @@
-%include	/usr/lib/rpm/macros.php
 %define		_class		I18Nv2
 %define		_status		beta
-%define		_pearname	%{_class}
+%define		_pearname	I18Nv2
+%include	/usr/lib/rpm/macros.php
 Summary:	%{_pearname} - internationalization
 Summary(pl.UTF-8):	%{_pearname} - umiędzynarodowienie
 Name:		php-pear-%{_pearname}
 Version:	0.11.4
-Release:	5
+Release:	6
 License:	PHP
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -15,9 +15,9 @@ URL:		http://pear.php.net/package/I18Nv2/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
+Requires:	php(iconv)
+Requires:	php(pcre)
 Requires:	php-common >= 3:4.0.6
-Requires:	php-iconv
-Requires:	php-pcre
 Requires:	php-pear
 Requires:	php-pear-PEAR-core
 Obsoletes:	php-pear-I18Nv2-tests
@@ -51,5 +51,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc install.log
 %{php_pear_dir}/.registry/*.reg
-%{php_pear_dir}/%{_class}.php
-%{php_pear_dir}/%{_class}
+%{php_pear_dir}/I18Nv2.php
+%{php_pear_dir}/I18Nv2
