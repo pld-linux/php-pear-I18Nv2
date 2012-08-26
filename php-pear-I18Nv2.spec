@@ -6,7 +6,7 @@ Summary:	%{_pearname} - internationalization
 Summary(pl.UTF-8):	%{_pearname} - umiędzynarodowienie
 Name:		php-pear-%{_pearname}
 Version:	0.11.4
-Release:	6
+Release:	7
 License:	PHP
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -15,9 +15,9 @@ URL:		http://pear.php.net/package/I18Nv2/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
+Requires:	php(core) >= 4.0.6
 Requires:	php(iconv)
 Requires:	php(pcre)
-Requires:	php-common >= 3:4.0.6
 Requires:	php-pear
 Requires:	php-pear-PEAR-core
 Obsoletes:	php-pear-I18Nv2-tests
