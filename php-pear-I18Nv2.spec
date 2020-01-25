@@ -1,7 +1,6 @@
 %define		_class		I18Nv2
 %define		_status		beta
 %define		_pearname	I18Nv2
-%include	/usr/lib/rpm/macros.php
 Summary:	%{_pearname} - internationalization
 Summary(pl.UTF-8):	%{_pearname} - umiędzynarodowienie
 Name:		php-pear-%{_pearname}
